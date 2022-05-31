@@ -6,6 +6,6 @@ namespace CustomProject.Interfaces
 {
     interface IHaveWeapon
     {
-
+        public void Attack();
     }
 }
