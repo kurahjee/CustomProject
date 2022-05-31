@@ -13,7 +13,6 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using CustomProject.Entities.TileMap;
 using CustomProject.Entities;
-using System.IO;
 using CustomProject.Models;
 using System.Collections.Generic;
 using CustomProject.Entities.Characters;
@@ -102,6 +101,7 @@ namespace CustomProject.GameStates
             {
                 Position = new Vector2(700, 700),
                 HealthTexture = block,
+                Identity = "enemy",
                 HealthBarColor = Color.Red,
                 Health = 125
             };
@@ -109,6 +109,7 @@ namespace CustomProject.GameStates
             _player1 = new Player(animations)
             {
                 Position = new Vector2(300, 600),
+                Identity = "player",
                 HealthTexture = block,
                 HealthBarColor = Color.Green,
                 Health = 100,
