@@ -24,6 +24,8 @@ namespace CustomProject.Entities
 
         private Color _color;
 
+        private string _ident;
+
         #endregion
 
         #region Properties
@@ -73,6 +75,12 @@ namespace CustomProject.Entities
 
                 return new Rectangle((int)Position.X, (int)Position.Y, this.Texture.Width, this.Texture.Height);
             }
+        }
+
+        public string Identity
+        {
+            get => _ident;
+            set => _ident = value;
         }
 
         #endregion
