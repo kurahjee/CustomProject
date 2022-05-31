@@ -32,19 +32,7 @@ namespace CustomProject.Entities
         {
             Move();
 
-            foreach (var sprite in sprites)
-            {
-                if (sprite == this)
-                    continue;
-
-                if ((this.Velocity.X > 0 && this.IsTouchingLeft(sprite)) ||
-                    (this.Velocity.X < 0 & this.IsTouchingRight(sprite)))
-                    this.Velocity.X = 0;
-
-                if ((this.Velocity.Y > 0 && this.IsTouchingTop(sprite)) ||
-                    (this.Velocity.Y < 0 & this.IsTouchingBottom(sprite)))
-                    this.Velocity.Y = 0;
-            }
+            DetectCollisionSetting(sprites);
 
             base.Update(gameTime, sprites);
 
@@ -59,6 +47,23 @@ namespace CustomProject.Entities
 
         protected virtual void Move()
         {
+        }
+
+        public virtual void DetectCollisionSetting(List<Sprite> sprites)
+        {
+            foreach (var sprite in sprites)
+            {
+                if (sprite == this)
+                    continue;
+
+                if ((this.Velocity.X > 0 && this.IsTouchingLeft(sprite)) ||
+                    (this.Velocity.X < 0 & this.IsTouchingRight(sprite)))
+                    this.Velocity.X = 0;
+
+                if ((this.Velocity.Y > 0 && this.IsTouchingTop(sprite)) ||
+                    (this.Velocity.Y < 0 & this.IsTouchingBottom(sprite)))
+                    this.Velocity.Y = 0;
+            }
         }
 
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)

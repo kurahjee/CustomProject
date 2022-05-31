@@ -1,5 +1,6 @@
 ﻿using CustomProject.Interfaces;
 using CustomProject.Models;
+using ExamplePlatformerGame.Interfaces;
 using ExamplePlatformerGame.Managers;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -14,6 +15,8 @@ namespace CustomProject.Entities.Characters
     {
 
         private MouseState mouse = Mouse.GetState();
+
+        public bool IsDeath => throw new NotImplementedException();
 
         public Enemy(Dictionary<string, Animation> animations)
             : base(animations)

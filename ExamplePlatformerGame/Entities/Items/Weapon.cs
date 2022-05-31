@@ -6,7 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace ExamplePlatformerGame.Entities
+namespace ExamplePlatformerGame.Entities.Items
 {
     public class Weapon : MovableSprite
     {

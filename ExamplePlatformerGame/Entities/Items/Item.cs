@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace CustomProject.Entities
+namespace CustomProject.Entities.Items
 {
     public class Item : Sprite
     {

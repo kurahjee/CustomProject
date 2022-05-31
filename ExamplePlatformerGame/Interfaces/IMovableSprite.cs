@@ -7,7 +7,7 @@ namespace CustomProject.Interfaces
 {
     interface IMovableSprite
     {
-        public MovableSprite FetchMovableObject(List<Sprite> sprites);
+        public void SetMovement();
         public string Identity { get; }
     }
 }

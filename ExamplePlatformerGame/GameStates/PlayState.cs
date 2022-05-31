@@ -18,6 +18,7 @@ using CustomProject.Models;
 using System.Collections.Generic;
 using CustomProject.Entities.Characters;
 using ExamplePlatformerGame.Entities;
+using ExamplePlatformerGame.Entities.Items;
 
 namespace CustomProject.GameStates
 {
@@ -42,6 +43,8 @@ namespace CustomProject.GameStates
         private List<MovableSprite> _movablesprites;
 
         private List<Character> _characters;
+
+        private MouseState pastMouse;
 
         #endregion
 
@@ -85,7 +88,7 @@ namespace CustomProject.GameStates
                 {"Idle", new Animation(content.Load<Texture2D>("Characters/Enemy/GreenSlime"), 30) }
             };
 
-            var weaponAnimations = new Dictionary<string, Animation>()
+            var fireballAnimations = new Dictionary<string, Animation>()
             {
                 {"Shot", new Animation(content.Load<Texture2D>("Attacks/fireball"), 5) }
             };
@@ -95,10 +98,7 @@ namespace CustomProject.GameStates
 
             #region Assigning GameObject
 
-            var fireball = new Weapon(weaponAnimations)
-            {
-                Position = new Vector2(500, 500)
-            };
+            var fireball = new Bullet(fireballAnimations);
 
             var enemy = new Enemy(enemyAnimations)
             {
@@ -108,7 +108,7 @@ namespace CustomProject.GameStates
                 Health = 125
             };
 
-            _player1 = new Player(animations, fireball)
+            _player1 = new Player(animations)
             {
                 Position = new Vector2(300, 600),
                 HealthTexture = block,
@@ -130,8 +130,7 @@ namespace CustomProject.GameStates
             _sprites = new List<Sprite>()
             {
                 _player1,
-                enemy,
-                fireball
+                enemy
             };
 
             _characters = new List<Character>()
@@ -166,10 +165,19 @@ namespace CustomProject.GameStates
         /// <param name="gameTime"></param>
         public override void Update(GameTime gameTime)
         {
+            MouseState mouse = Mouse.GetState();
+
+            if(mouse.LeftButton == ButtonState.Pressed && pastMouse.LeftButton == ButtonState.Released)
+            {
+
+            }
+
             foreach (var sprite in _sprites)
             {
                 sprite.Update(gameTime, _sprites);
             }
+
+            pastMouse = mouse;
         }
 
         /// <summary>
