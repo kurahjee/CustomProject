@@ -95,7 +95,10 @@ namespace CustomProject.GameStates
 
             #region Assigning GameObject
 
-            var fireball = new Weapon(weaponAnimations);
+            var fireball = new Weapon(weaponAnimations)
+            {
+                Position = new Vector2(500, 500)
+            };
 
             var enemy = new Enemy(enemyAnimations)
             {
@@ -127,7 +130,8 @@ namespace CustomProject.GameStates
             _sprites = new List<Sprite>()
             {
                 _player1,
-                enemy
+                enemy,
+                fireball
             };
 
             _characters = new List<Character>()

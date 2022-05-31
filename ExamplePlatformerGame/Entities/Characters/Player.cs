@@ -40,6 +40,7 @@ namespace CustomProject.Entities.Characters
         {
             MouseState mouse = Mouse.GetState();
 
+
             if(mouse.LeftButton == ButtonState.Pressed)
             {
                 Attack();

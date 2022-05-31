@@ -29,8 +29,11 @@ namespace ExamplePlatformerGame.Entities
 
         protected override void Move()
         {
-            Velocity.X = Speed;
-            Velocity.Y = gravity;
+            if (isShoot)
+            {
+                Velocity.X = Speed;
+                Velocity.Y = gravity;
+            }
         }
 
         public override void Update(GameTime gameTime, List<Sprite> sprites)
