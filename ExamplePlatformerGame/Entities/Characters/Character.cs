@@ -60,9 +60,8 @@ namespace CustomProject.Entities.Characters
 
         }
 
-        protected override void Move()
+        protected override void MovementSetUp()
         {
-            base.Move();
         }
 
         private void DrawHealthBar(SpriteBatch spriteBatch)

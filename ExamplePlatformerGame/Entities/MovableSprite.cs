@@ -13,13 +13,6 @@ namespace CustomProject.Entities
     {
         protected readonly float gravity = 9.8f;
 
-        protected string _identity;
-
-        public string Identity
-        {
-            get { return _identity; }
-        }
-
         public MovableSprite(Dictionary<string, Animation> animations) : base(animations)
         {
         }
@@ -30,7 +23,7 @@ namespace CustomProject.Entities
 
         public override void Update(GameTime gameTime, List<Sprite> sprites)
         {
-            Move();
+            MovementSetUp();
 
             DetectCollisionSetting(sprites);
 
@@ -45,7 +38,7 @@ namespace CustomProject.Entities
         {
         }
 
-        protected virtual void Move()
+        protected virtual void MovementSetUp()
         {
         }
 
@@ -56,24 +49,36 @@ namespace CustomProject.Entities
                 if (sprite == this)
                     continue;
 
-                if ((this.Velocity.X > 0 && this.IsTouchingLeft(sprite)) ||
-                    (this.Velocity.X < 0 & this.IsTouchingRight(sprite)))
-                    this.Velocity.X = 0;
-
-                if ((this.Velocity.Y > 0 && this.IsTouchingTop(sprite)) ||
-                    (this.Velocity.Y < 0 & this.IsTouchingBottom(sprite)))
-                    this.Velocity.Y = 0;
+                CollisionSetUp(sprite);
             }
+        }
+
+        protected virtual void CollisionSetUp(Sprite sprite)
+        {
+            if ((this.Velocity.X > 0 && this.IsTouchingLeft(sprite)) ||
+                    (this.Velocity.X < 0 & this.IsTouchingRight(sprite)))
+                this.Velocity.X = 0;
+
+            if ((this.Velocity.Y > 0 && this.IsTouchingTop(sprite)) ||
+                (this.Velocity.Y < 0 & this.IsTouchingBottom(sprite)))
+                this.Velocity.Y = 0;
+        }
+
+        private bool IsTouchingLeftOrRight(Sprite sprite)
+        {
+            return (this.Velocity.X > 0 && this.IsTouchingLeft(sprite)) ||
+                    (this.Velocity.X < 0 & this.IsTouchingRight(sprite));
+        }
+
+        private bool IsTouchingTopOrBottom(Sprite sprite)
+        {
+            return (this.Velocity.Y > 0 && this.IsTouchingTop(sprite)) ||
+                (this.Velocity.Y < 0 & this.IsTouchingBottom(sprite));
         }
 
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
             base.Draw(gameTime, spriteBatch);
-        }
-
-        public bool AreYou(string id)
-        {
-            return _identity == id ? true : false;
         }
     }
 }

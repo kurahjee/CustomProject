@@ -29,7 +29,6 @@ namespace CustomProject.Entities.Characters
             : base(animations)
         {
             _direction = Direction.Right;
-            _identity = "player";
             _bullets = new List<Bullet>();
         }
 

@@ -37,12 +37,10 @@ namespace CustomProject.Entities.Characters
 
         public override void Update(GameTime gameTime, List<Sprite> sprites)
         {
-            MovableSprite player = MovableSpriteManager.Instance.FetchObject("player");
-
             base.Update(gameTime, sprites);
         }
 
-        protected override void Move()
+        protected override void MovementSetUp()
         {
             
         }

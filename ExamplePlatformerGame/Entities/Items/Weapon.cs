@@ -27,7 +27,7 @@ namespace ExamplePlatformerGame.Entities.Items
             _animationManager.Play(_animations["Shot"]);
         }
 
-        protected override void Move()
+        protected override void MovementSetUp()
         {
             if (isShoot)
             {

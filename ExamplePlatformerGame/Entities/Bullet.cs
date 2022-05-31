@@ -23,9 +23,16 @@ namespace ExamplePlatformerGame.Entities
             base.Update(gameTime, sprites);
         }
 
-        protected override void Move()
+        protected override void MovementSetUp()
         {
             Velocity.X = Speed;
+        }
+
+        public override void DetectCollisionSetting(List<Sprite> sprites)
+        {
+            
+
+            base.DetectCollisionSetting(sprites);
         }
 
         protected override void SetAnimation()

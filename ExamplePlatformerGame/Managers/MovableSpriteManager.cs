@@ -33,17 +33,5 @@ namespace ExamplePlatformerGame.Managers
         }
 
         private MovableSpriteManager() { }
-
-        public MovableSprite FetchObject(string id)
-        {
-            foreach(var sprite in movableSprite)
-            {
-                if (sprite.AreYou(id))
-                {
-                    return sprite;
-                }
-            }
-            return null;
-        }
     }
 }
