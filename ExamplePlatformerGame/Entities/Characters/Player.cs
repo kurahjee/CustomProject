@@ -1,15 +1,13 @@
 ﻿using System.Collections.Generic;
-using CustomProject.Entities.Items;
+using CustomProject.Interfaces;
 using CustomProject.Models;
-using ExamplePlatformerGame.Entities;
-using ExamplePlatformerGame.Entities.Items;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
 namespace CustomProject.Entities.Characters
 {
-    public class Player : Character
+    public class Player : Character, IHaveHealth
     {
         #region Fields
 
@@ -78,7 +76,7 @@ namespace CustomProject.Entities.Characters
             }
         }
 
-        protected override void Move()
+        protected override void MovementSetUp()
         {
             KeyboardState keyState = Keyboard.GetState();
 
@@ -98,9 +96,14 @@ namespace CustomProject.Entities.Characters
             }
         }
 
-        private void PickUpItem(Item item)
+        public void ReduceHealth()
         {
+            throw new System.NotImplementedException();
+        }
 
+        public void IncreaseHealth()
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

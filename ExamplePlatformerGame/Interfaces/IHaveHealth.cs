@@ -2,14 +2,12 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ExamplePlatformerGame.Interfaces
+namespace CustomProject.Interfaces
 {
     interface IHaveHealth
     {
         public void ReduceHealth();
 
         public void IncreaseHealth();
-
-        public bool IsDeath { get; }
     }
 }

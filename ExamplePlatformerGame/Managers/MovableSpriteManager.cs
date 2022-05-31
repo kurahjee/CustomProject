@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace ExamplePlatformerGame.Managers
+namespace CustomProject.Managers
 {
     public sealed class MovableSpriteManager
     {

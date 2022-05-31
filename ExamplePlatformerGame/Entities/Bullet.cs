@@ -6,7 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace ExamplePlatformerGame.Entities
+namespace CustomProject.Entities
 {
     public class Bullet : MovableSprite
     {
@@ -30,7 +30,7 @@ namespace ExamplePlatformerGame.Entities
 
         protected override void CollisionSetUp(Sprite sprite)
         {
-            if(Is)
+
         }
 
         protected override void SetAnimation()

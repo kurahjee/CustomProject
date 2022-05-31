@@ -17,8 +17,6 @@ using System.IO;
 using CustomProject.Models;
 using System.Collections.Generic;
 using CustomProject.Entities.Characters;
-using ExamplePlatformerGame.Entities;
-using ExamplePlatformerGame.Entities.Items;
 
 namespace CustomProject.GameStates
 {
