@@ -28,11 +28,9 @@ namespace ExamplePlatformerGame.Entities
             Velocity.X = Speed;
         }
 
-        public override void DetectCollisionSetting(List<Sprite> sprites)
+        protected override void CollisionSetUp(Sprite sprite)
         {
-            
-
-            base.DetectCollisionSetting(sprites);
+            if(Is)
         }
 
         protected override void SetAnimation()

@@ -55,22 +55,20 @@ namespace CustomProject.Entities
 
         protected virtual void CollisionSetUp(Sprite sprite)
         {
-            if ((this.Velocity.X > 0 && this.IsTouchingLeft(sprite)) ||
-                    (this.Velocity.X < 0 & this.IsTouchingRight(sprite)))
+            if (IsTouchingLeftOrRight(sprite))
                 this.Velocity.X = 0;
 
-            if ((this.Velocity.Y > 0 && this.IsTouchingTop(sprite)) ||
-                (this.Velocity.Y < 0 & this.IsTouchingBottom(sprite)))
+            if (IsTouchingTopOrBottom(sprite))
                 this.Velocity.Y = 0;
         }
 
-        private bool IsTouchingLeftOrRight(Sprite sprite)
+        protected bool IsTouchingLeftOrRight(Sprite sprite)
         {
             return (this.Velocity.X > 0 && this.IsTouchingLeft(sprite)) ||
                     (this.Velocity.X < 0 & this.IsTouchingRight(sprite));
         }
 
-        private bool IsTouchingTopOrBottom(Sprite sprite)
+        protected bool IsTouchingTopOrBottom(Sprite sprite)
         {
             return (this.Velocity.Y > 0 && this.IsTouchingTop(sprite)) ||
                 (this.Velocity.Y < 0 & this.IsTouchingBottom(sprite));
