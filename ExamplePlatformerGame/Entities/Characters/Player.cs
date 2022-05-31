@@ -95,6 +95,11 @@ namespace CustomProject.Entities.Characters
             }
         }
 
+        private void Attack()
+        {
+
+        }
+
         private void PickUpItem(Item item)
         {
 

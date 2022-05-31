@@ -86,7 +86,7 @@ namespace CustomProject.GameStates
             #region Assigning GameObject
             var enemy = new Enemy(enemyAnimations)
             {
-                Position = new Vector2(700, 600),
+                Position = new Vector2(700, 700),
                 HealthTexture = block,
                 HealthBarColor = Color.Red,
                 Health = 125

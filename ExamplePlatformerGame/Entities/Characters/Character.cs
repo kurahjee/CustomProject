@@ -9,7 +9,7 @@ using System.Text;
 
 namespace CustomProject.Entities.Characters
 {
-    public class Character : MovableSprite, IMovableSprite
+    public class Character : MovableSprite
     {
         #region Fields
 
