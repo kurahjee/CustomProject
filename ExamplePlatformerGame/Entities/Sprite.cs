@@ -130,6 +130,11 @@ namespace CustomProject.Entities
             }
         }
 
+        public bool AreYou(string id)
+        {
+            return _ident == id ? true : false;
+        }
+
         #region Collision
 
         protected bool IsTouchingLeft(Sprite sprite)
