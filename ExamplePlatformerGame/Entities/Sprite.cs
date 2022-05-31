@@ -10,7 +10,7 @@ using System.Text;
 
 namespace CustomProject.Entities
 {
-    public class Sprite : GameObject
+    public class Sprite : GameObject, ICloneable
     {
         #region Fields
 
@@ -133,6 +133,11 @@ namespace CustomProject.Entities
         public bool AreYou(string id)
         {
             return _ident == id ? true : false;
+        }
+
+        public object Clone()
+        {
+            return this.MemberwiseClone();
         }
 
         #region Collision

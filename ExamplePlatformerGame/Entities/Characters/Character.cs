@@ -21,6 +21,8 @@ namespace CustomProject.Entities.Characters
 
         private MouseState pastMouse;
 
+        private int _damage;
+
         #endregion
 
         #region Properties
@@ -38,6 +40,12 @@ namespace CustomProject.Entities.Characters
         }
 
         public Color HealthBarColor { get; set; }
+
+        public int Damage
+        {
+            get => _damage;
+            set => _damage = value;
+        }
 
         public bool IsAlive { get { return _health > 0 ? true : false; } }
 

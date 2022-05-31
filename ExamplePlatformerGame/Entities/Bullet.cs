@@ -13,6 +13,12 @@ namespace CustomProject.Entities
     {
         private bool _shoot;
 
+        private float _timer;
+
+        public bool IsRemoved { get; set; }
+
+        public float LifeSpan { get; set; }
+
         public Bullet(Dictionary<string, Animation> animations)
             : base(animations)
         {
@@ -21,6 +27,13 @@ namespace CustomProject.Entities
 
         public override void Update(GameTime gameTime, List<Sprite> sprites)
         {
+            _timer += (float)gameTime.ElapsedGameTime.TotalSeconds;
+
+            if(_timer > LifeSpan)
+            {
+                IsRemoved = true;
+            }
+
             base.Update(gameTime, sprites);
         }
 
@@ -31,10 +44,6 @@ namespace CustomProject.Entities
 
         protected override void CollisionSetUp(Sprite sprite)
         {
-            IHaveHealth character = sprite as IHaveHealth;
-
-
-
             base.CollisionSetUp(sprite);
         }
 

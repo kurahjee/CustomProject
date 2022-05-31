@@ -98,7 +98,7 @@ namespace CustomProject.Entities.Characters
 
         public void ReduceHealth(string id)
         {
-            throw new System.NotImplementedException();
+            
         }
 
         public void IncreaseHealth()
