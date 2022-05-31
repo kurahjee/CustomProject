@@ -10,11 +10,7 @@ namespace CustomProject.Entities.Characters
     {
         #region Fields
 
-        private List<Item> _inventory;
-
         private Direction _direction;
-
-        private bool hasjumped;
 
         #endregion
 
