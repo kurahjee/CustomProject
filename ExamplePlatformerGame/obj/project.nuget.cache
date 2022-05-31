@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "aPXlKlw8yT4Bjnod2LdOZSWJbPvAyeJVmyO4LUjzrNfet5uWJix1CJXZL1PqNh8okZvbBIs9cn+8h+2WFMVM4w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\HuuThien\\COS20007\\ExamplePlatformerGame\\ExamplePlatformerGame\\ExamplePlatformerGame.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\HuuThien\\.nuget\\packages\\monogame.content.builder.task\\3.8.0.1641\\monogame.content.builder.task.3.8.0.1641.nupkg.sha512",
+    "C:\\Users\\HuuThien\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.0.1641\\monogame.framework.desktopgl.3.8.0.1641.nupkg.sha512"
+  ],
+  "logs": []
+}
