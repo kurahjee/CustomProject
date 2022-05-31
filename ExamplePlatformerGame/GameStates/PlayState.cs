@@ -17,6 +17,7 @@ using System.IO;
 using CustomProject.Models;
 using System.Collections.Generic;
 using CustomProject.Entities.Characters;
+using ExamplePlatformerGame.Entities;
 
 namespace CustomProject.GameStates
 {
@@ -58,13 +59,16 @@ namespace CustomProject.GameStates
         public override void LoadContent(ContentManager content)
         {
             #region Load file contents
+
             var block = content.Load<Texture2D>("Block");
 
             _texture = content.Load<Texture2D>("TileSets/Mossy - TileSet");
+
             #endregion
 
 
             #region Setup Animations for gameobjects
+
             var animations = new Dictionary<string, Animation>()
             {
 
@@ -80,10 +84,19 @@ namespace CustomProject.GameStates
             {
                 {"Idle", new Animation(content.Load<Texture2D>("Characters/Enemy/GreenSlime"), 30) }
             };
+
+            var weaponAnimations = new Dictionary<string, Animation>()
+            {
+                {"Shot", new Animation(content.Load<Texture2D>("Attacks/fireball"), 5) }
+            };
+
             #endregion
 
 
             #region Assigning GameObject
+
+            var fireball = new Weapon(weaponAnimations);
+
             var enemy = new Enemy(enemyAnimations)
             {
                 Position = new Vector2(700, 700),
@@ -105,10 +118,12 @@ namespace CustomProject.GameStates
                     Jump = Keys.Space
                 }
             };
+
             #endregion
 
 
             #region Adding GameObject to Lists
+
             _sprites = new List<Sprite>()
             {
                 _player1,
@@ -120,12 +135,15 @@ namespace CustomProject.GameStates
                 _player1,
                 enemy
             };
+
             #endregion
 
             #region Setup Map
+
             _tileSet = new TileSet(_graphicsDevice, _texture, 7);
             _map = new Map("map1.txt", _tileSet, spriteFont);
             _map.LoadMapFile();
+
             #endregion
 
 

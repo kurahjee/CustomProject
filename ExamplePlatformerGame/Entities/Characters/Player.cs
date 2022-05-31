@@ -85,7 +85,7 @@ namespace CustomProject.Entities.Characters
                 _direction = Direction.Right;
                 Velocity.X = Speed;
             }
-            if (keyState.IsKeyDown(Input.Jump) && hasjumped == false)
+            if (keyState.IsKeyDown(Input.Jump))
             {
                 Velocity.Y = -Speed;
             }

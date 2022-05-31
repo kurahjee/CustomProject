@@ -32,3 +32,4 @@ C:\Users\HuuThien\COS20007\ExamplePlatformerGame\ExamplePlatformerGame\bin\Debug
 C:\Users\HuuThien\COS20007\ExamplePlatformerGame\ExamplePlatformerGame\bin\Debug\netcoreapp3.1\Content\Characters\Wizard\WalkRight.xnb
 C:\Users\HuuThien\COS20007\ExamplePlatformerGame\ExamplePlatformerGame\bin\Debug\netcoreapp3.1\Content\TileSets\Mossy - TileSet.xnb
 C:\Users\HuuThien\COS20007\ExamplePlatformerGame\ExamplePlatformerGame\bin\Debug\netcoreapp3.1\Maps\map1.txt
+C:\Users\HuuThien\COS20007\ExamplePlatformerGame\ExamplePlatformerGame\bin\Debug\netcoreapp3.1\Content\Attacks\fireball.xnb
