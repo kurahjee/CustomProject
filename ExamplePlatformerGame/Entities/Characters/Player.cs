@@ -7,7 +7,7 @@ using Microsoft.Xna.Framework.Input;
 
 namespace CustomProject.Entities.Characters
 {
-    public class Player : Character, IHaveHealth
+    public class Player : Character, IHaveHealth, IHaveWeapon
     {
         #region Fields
 
@@ -102,6 +102,11 @@ namespace CustomProject.Entities.Characters
         }
 
         public void IncreaseHealth()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void Attack()
         {
             throw new System.NotImplementedException();
         }
