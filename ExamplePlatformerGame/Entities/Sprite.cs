@@ -18,6 +18,10 @@ namespace CustomProject.Entities
 
         protected Dictionary<string, Animation> _animations;
 
+        protected KeyboardState _currentKey;
+
+        protected KeyboardState _previousKey;
+
         private Vector2 _position;
 
         private Texture2D _texture;
