@@ -6,7 +6,7 @@ namespace CustomProject.Interfaces
 {
     interface IHaveHealth
     {
-        public void ReduceHealth();
+        public void ReduceHealth(string id);
 
         public void IncreaseHealth();
     }

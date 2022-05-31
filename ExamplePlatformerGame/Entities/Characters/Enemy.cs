@@ -8,7 +8,7 @@ using System.Collections.Generic;
 
 namespace CustomProject.Entities.Characters
 {
-    public class Enemy : Character
+    public class Enemy : Character, IHaveHealth, IHaveWeapon
     {
 
         private MouseState mouse = Mouse.GetState();
@@ -51,6 +51,21 @@ namespace CustomProject.Entities.Characters
         protected override void SetAnimation()
         {
             _animationManager.Play(_animations["Idle"]);
+        }
+
+        public void ReduceHealth(string id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void IncreaseHealth()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Attack()
+        {
+            throw new NotImplementedException();
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using CustomProject.Entities;
+using CustomProject.Interfaces;
 using CustomProject.Models;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -30,7 +31,11 @@ namespace CustomProject.Entities
 
         protected override void CollisionSetUp(Sprite sprite)
         {
+            IHaveHealth character = sprite as IHaveHealth;
 
+
+
+            base.CollisionSetUp(sprite);
         }
 
         protected override void SetAnimation()
