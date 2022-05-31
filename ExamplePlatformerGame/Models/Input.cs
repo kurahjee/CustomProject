@@ -16,5 +16,7 @@ namespace CustomProject.Models
         public Keys Right { get; set; }
 
         public Keys Jump { get; set; }
+
+        public Keys Attack { get; set; }
     }
 }

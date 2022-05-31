@@ -87,7 +87,7 @@ namespace CustomProject.GameStates
 
             var fireballAnimations = new Dictionary<string, Animation>()
             {
-                {"Shot", new Animation(content.Load<Texture2D>("Attacks/fireball"), 5) }
+                {"ShootRight", new Animation(content.Load<Texture2D>("Attacks/fireball"), 5) }
             };
 
             #endregion
@@ -109,6 +109,7 @@ namespace CustomProject.GameStates
             _player1 = new Player(animations)
             {
                 Position = new Vector2(300, 600),
+                Bullet = fireball,
                 Identity = "player",
                 HealthTexture = block,
                 HealthBarColor = Color.Green,
@@ -117,7 +118,8 @@ namespace CustomProject.GameStates
                 {
                     Left = Keys.A,
                     Right = Keys.D,
-                    Jump = Keys.Space
+                    Jump = Keys.Space,
+                    Attack = Keys.E
                 }
             };
 
@@ -127,12 +129,6 @@ namespace CustomProject.GameStates
             #region Adding GameObject to Lists
 
             _sprites = new List<Sprite>()
-            {
-                _player1,
-                enemy
-            };
-
-            _characters = new List<Character>()
             {
                 _player1,
                 enemy

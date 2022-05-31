@@ -15,7 +15,7 @@ namespace CustomProject.Entities
 
         private float _timer;
 
-        public bool IsRemoved { get; set; }
+        public bool IsRemoved = false;
 
         public float LifeSpan { get; set; }
 
@@ -42,11 +42,6 @@ namespace CustomProject.Entities
             Velocity.X = Speed;
         }
 
-        protected override void CollisionSetUp(Sprite sprite)
-        {
-            base.CollisionSetUp(sprite);
-        }
-
         protected override void SetAnimation()
         {
             _animationManager.Play(_animations["ShootRight"]);
@@ -54,7 +49,8 @@ namespace CustomProject.Entities
 
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
-            base.Draw(gameTime, spriteBatch);
+            if(!IsRemoved)
+                base.Draw(gameTime, spriteBatch);
         }
     }
 }

@@ -13,13 +13,17 @@ namespace CustomProject.Entities.Characters
 
         private Direction _direction;
 
-        private List<Bullet> _bullets;
+        private Bullet _bullet;
 
         #endregion
 
         #region Properties
 
-
+        public Bullet Bullet
+        {
+            get => _bullet;
+            set => _bullet = value;
+        }
 
         #endregion
 
@@ -27,7 +31,6 @@ namespace CustomProject.Entities.Characters
             : base(animations)
         {
             _direction = Direction.Right;
-            _bullets = new List<Bullet>();
         }
 
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
@@ -37,7 +40,16 @@ namespace CustomProject.Entities.Characters
 
         public override void Update(GameTime gameTime, List<Sprite> sprites)
         {
-            MouseState mouse = Mouse.GetState();
+            _previousKey = _currentKey;
+            _currentKey = Keyboard.GetState();
+
+            if (_currentKey.IsKeyDown(Input.Attack)&&_previousKey.IsKeyUp(Input.Attack))
+            {
+                var bullet = _bullet.Clone() as Bullet;
+                bullet.LifeSpan = 2f;
+                bullet.Position = Position;
+                sprites.Add(bullet);
+            }
 
             base.Update(gameTime, sprites);
         }
