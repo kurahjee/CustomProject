@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>C:/Users/HuuThien/COS20007/ExamplePlatformerGame/ExamplePlatformerGame/Content/Characters/Wizard/WalkRight.png</SourceFile>
+  <SourceFile>C:/Users/HuuThien/COS20007/CustomProject/ExamplePlatformerGame/Content/Characters/Wizard/WalkRight.png</SourceFile>
   <SourceTime>2022-05-30T23:35:34.5226785+10:00</SourceTime>
-  <DestFile>C:/Users/HuuThien/COS20007/ExamplePlatformerGame/ExamplePlatformerGame/Content/bin/DesktopGL/Content/Characters/Wizard/WalkRight.xnb</DestFile>
-  <DestTime>2022-05-31T02:35:19.8232574+10:00</DestTime>
+  <DestFile>C:/Users/HuuThien/COS20007/CustomProject/ExamplePlatformerGame/Content/bin/DesktopGL/Content/Characters/Wizard/WalkRight.xnb</DestFile>
+  <DestTime>2022-05-31T22:56:10.5487309+10:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2020-08-11T02:17:54+10:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

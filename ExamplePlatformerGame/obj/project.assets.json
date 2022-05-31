@@ -181,11 +181,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HuuThien\\COS20007\\ExamplePlatformerGame\\ExamplePlatformerGame\\ExamplePlatformerGame.csproj",
+      "projectUniqueName": "C:\\Users\\HuuThien\\COS20007\\CustomProject\\ExamplePlatformerGame\\ExamplePlatformerGame.csproj",
       "projectName": "ExamplePlatformerGame",
-      "projectPath": "C:\\Users\\HuuThien\\COS20007\\ExamplePlatformerGame\\ExamplePlatformerGame\\ExamplePlatformerGame.csproj",
+      "projectPath": "C:\\Users\\HuuThien\\COS20007\\CustomProject\\ExamplePlatformerGame\\ExamplePlatformerGame.csproj",
       "packagesPath": "C:\\Users\\HuuThien\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HuuThien\\COS20007\\ExamplePlatformerGame\\ExamplePlatformerGame\\obj\\",
+      "outputPath": "C:\\Users\\HuuThien\\COS20007\\CustomProject\\ExamplePlatformerGame\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

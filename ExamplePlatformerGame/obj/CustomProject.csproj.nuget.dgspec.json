@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HuuThien\\COS20007\\CustomProject\\ExamplePlatformerGame\\ExamplePlatformerGame.csproj": {}
+    "C:\\Users\\HuuThien\\COS20007\\CustomProject\\ExamplePlatformerGame\\CustomProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HuuThien\\COS20007\\CustomProject\\ExamplePlatformerGame\\ExamplePlatformerGame.csproj": {
+    "C:\\Users\\HuuThien\\COS20007\\CustomProject\\ExamplePlatformerGame\\CustomProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HuuThien\\COS20007\\CustomProject\\ExamplePlatformerGame\\ExamplePlatformerGame.csproj",
-        "projectName": "ExamplePlatformerGame",
-        "projectPath": "C:\\Users\\HuuThien\\COS20007\\CustomProject\\ExamplePlatformerGame\\ExamplePlatformerGame.csproj",
+        "projectUniqueName": "C:\\Users\\HuuThien\\COS20007\\CustomProject\\ExamplePlatformerGame\\CustomProject.csproj",
+        "projectName": "CustomProject",
+        "projectPath": "C:\\Users\\HuuThien\\COS20007\\CustomProject\\ExamplePlatformerGame\\CustomProject.csproj",
         "packagesPath": "C:\\Users\\HuuThien\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\HuuThien\\COS20007\\CustomProject\\ExamplePlatformerGame\\obj\\",
         "projectStyle": "PackageReference",

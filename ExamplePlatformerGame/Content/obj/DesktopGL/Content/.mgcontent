@@ -4,16 +4,16 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/HuuThien/COS20007/ExamplePlatformerGame/ExamplePlatformerGame/Content/Attacks/fireball.png</File>
-    <File>C:/Users/HuuThien/COS20007/ExamplePlatformerGame/ExamplePlatformerGame/Content/Block.png</File>
-    <File>C:/Users/HuuThien/COS20007/ExamplePlatformerGame/ExamplePlatformerGame/Content/Characters/Enemy/GreenSlime.png</File>
-    <File>C:/Users/HuuThien/COS20007/ExamplePlatformerGame/ExamplePlatformerGame/Content/Characters/Wizard/IdleLeft.png</File>
-    <File>C:/Users/HuuThien/COS20007/ExamplePlatformerGame/ExamplePlatformerGame/Content/Characters/Wizard/IdleRight.png</File>
-    <File>C:/Users/HuuThien/COS20007/ExamplePlatformerGame/ExamplePlatformerGame/Content/Characters/Wizard/JumpLeft.png</File>
-    <File>C:/Users/HuuThien/COS20007/ExamplePlatformerGame/ExamplePlatformerGame/Content/Characters/Wizard/JumpRight.png</File>
-    <File>C:/Users/HuuThien/COS20007/ExamplePlatformerGame/ExamplePlatformerGame/Content/Characters/Wizard/WalkLeft.png</File>
-    <File>C:/Users/HuuThien/COS20007/ExamplePlatformerGame/ExamplePlatformerGame/Content/Characters/Wizard/WalkRight.png</File>
-    <File>C:/Users/HuuThien/COS20007/ExamplePlatformerGame/ExamplePlatformerGame/Content/TileSets/Mossy - TileSet.png</File>
+    <File>C:/Users/HuuThien/COS20007/CustomProject/ExamplePlatformerGame/Content/Attacks/fireball.png</File>
+    <File>C:/Users/HuuThien/COS20007/CustomProject/ExamplePlatformerGame/Content/Block.png</File>
+    <File>C:/Users/HuuThien/COS20007/CustomProject/ExamplePlatformerGame/Content/Characters/Enemy/GreenSlime.png</File>
+    <File>C:/Users/HuuThien/COS20007/CustomProject/ExamplePlatformerGame/Content/Characters/Wizard/IdleLeft.png</File>
+    <File>C:/Users/HuuThien/COS20007/CustomProject/ExamplePlatformerGame/Content/Characters/Wizard/IdleRight.png</File>
+    <File>C:/Users/HuuThien/COS20007/CustomProject/ExamplePlatformerGame/Content/Characters/Wizard/JumpLeft.png</File>
+    <File>C:/Users/HuuThien/COS20007/CustomProject/ExamplePlatformerGame/Content/Characters/Wizard/JumpRight.png</File>
+    <File>C:/Users/HuuThien/COS20007/CustomProject/ExamplePlatformerGame/Content/Characters/Wizard/WalkLeft.png</File>
+    <File>C:/Users/HuuThien/COS20007/CustomProject/ExamplePlatformerGame/Content/Characters/Wizard/WalkRight.png</File>
+    <File>C:/Users/HuuThien/COS20007/CustomProject/ExamplePlatformerGame/Content/TileSets/Mossy - TileSet.png</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />
