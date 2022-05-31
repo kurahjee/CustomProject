@@ -105,7 +105,7 @@ namespace CustomProject.GameStates
                 Health = 125
             };
 
-            _player1 = new Player(animations)
+            _player1 = new Player(animations, fireball)
             {
                 Position = new Vector2(300, 600),
                 HealthTexture = block,

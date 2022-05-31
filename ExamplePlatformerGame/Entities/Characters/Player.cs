@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using CustomProject.Models;
+using ExamplePlatformerGame.Entities;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
@@ -12,6 +13,8 @@ namespace CustomProject.Entities.Characters
 
         private Direction _direction;
 
+        private Weapon _weapon;
+
         #endregion
 
         #region Properties
@@ -20,11 +23,12 @@ namespace CustomProject.Entities.Characters
 
         #endregion
 
-        public Player(Dictionary<string, Animation> animations)
+        public Player(Dictionary<string, Animation> animations, Weapon weapon)
             : base(animations)
         {
             _direction = Direction.Right;
             _identity = "player";
+            _weapon = weapon;
         }
 
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
@@ -34,6 +38,13 @@ namespace CustomProject.Entities.Characters
 
         public override void Update(GameTime gameTime, List<Sprite> sprites)
         {
+            MouseState mouse = Mouse.GetState();
+
+            if(mouse.LeftButton == ButtonState.Pressed)
+            {
+                Attack();
+            }
+
             base.Update(gameTime, sprites);
         }
 
@@ -93,7 +104,7 @@ namespace CustomProject.Entities.Characters
 
         private void Attack()
         {
-
+            _weapon.IsActive = true;
         }
 
         private void PickUpItem(Item item)

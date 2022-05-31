@@ -11,6 +11,13 @@ namespace ExamplePlatformerGame.Entities
     public class Weapon : MovableSprite
     {
         private bool isShoot = false;
+
+        public bool IsActive
+        {
+            get => isShoot;
+            set => isShoot = value;
+        }
+
         public Weapon(Dictionary<string, Animation> animations) : base(animations)
         {
         }
